@@ -8,7 +8,10 @@ packages = [{include = "directory_printer"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+click = "^8.1.7"
 
+[tool.poetry.scripts]
+directory_printer = "directory_printer.directory_printer:print_directories"
 
 [build-system]
 requires = ["poetry-core"]
