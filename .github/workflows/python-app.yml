@@ -26,6 +26,8 @@ jobs:
     - uses: abatilo/actions-poetry@v2
       with:
         poetry-version: "1.7.1"
+    - name: Install
+      run: poetry install --with dev
     - name: Run tests
       run: poetry run pytest
     - name: Lint
